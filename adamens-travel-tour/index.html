@@ -3,40 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adamens Travel &amp; Tour — Time for your next adventure</title>
-  <meta name="description" content="Adamens Travel & Tour plans your next adventure — flights, tours, transfers, and hotels. Summer deals, guided trips, and hassle-free travel." />
+  <title>Adamens Travel — Excellence in Traveling &amp; Recruitment Services</title>
+  <meta name="description" content="Adamens Travel makes international travel and education dreams a reality. Study, work, or travel abroad with expert visa, recruitment, and educational consultancy support. Accra, Ghana." />
 
-  <!-- Google Fonts: Rubik (headings) + Poppins (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rubik:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+  <!-- ===== Reusable SVG symbols ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="logo" viewBox="0 0 100 100">
+      <clipPath id="globeClip"><circle cx="50" cy="50" r="46"/></clipPath>
+      <circle cx="50" cy="50" r="46" fill="#eef2f7" stroke="#c3d0e0" stroke-width="2.5"/>
+      <g clip-path="url(#globeClip)" stroke="#cdd9e6" stroke-width="1.4" fill="none">
+        <ellipse cx="50" cy="50" rx="20" ry="46"/>
+        <line x1="4" y1="50" x2="96" y2="50"/>
+        <line x1="10" y1="30" x2="90" y2="30"/>
+        <line x1="10" y1="70" x2="90" y2="70"/>
+      </g>
+      <text x="49" y="73" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="66" fill="#17365a">A</text>
+      <g transform="translate(14 40) rotate(-16) scale(0.13)" fill="#ee8a1e">
+        <path d="M482.3 192c34.2 0 93.7 29 93.7 64c0 36-59.5 64-93.7 64l-116.6 0L265.2 495.9c-1.2 5.6-6.2 9.6-11.9 9.6l-43.9 0c-7.9 0-13.7-7.4-11.8-15.1L232 320l-116.7 0-31.4 41.9c-2.3 3-5.8 4.8-9.6 4.8l-33.6 0c-5.1 0-8.8-4.8-7.5-9.7L60 256 32.9 155.1c-1.3-5 2.4-9.7 7.5-9.7l33.6 0c3.8 0 7.3 1.8 9.6 4.8L115.3 192 232 192 156.6 21.3C154.7 13.6 160.5 6.2 168.4 6.2l43.9 0c5.7 0 10.7 4 11.9 9.6L365.4 192l116.9 0z"/>
+      </g>
+    </symbol>
+  </svg>
+
   <!-- ===================== HEADER / NAV ===================== -->
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a href="#top" class="brand" aria-label="Adamens Travel and Tour home">
-        <span class="brand-pin" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
-          </svg>
-        </span>
+      <a href="#top" class="brand" aria-label="Adamens Travel home">
+        <svg class="brand-logo" aria-hidden="true"><use href="#logo"/></svg>
         <span class="brand-text">
-          <strong>Adamens</strong>
-          <small>Travel &amp; Tour</small>
+          <strong>Adamens Travel</strong>
+          <small>Excellence in Traveling &amp; Recruitment</small>
         </span>
       </a>
 
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <a href="#top">Home</a>
         <a href="#about">About</a>
-        <a href="#promos">Promos</a>
         <a href="#services">Services</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
-        <a href="#promos" class="btn btn-orange btn-sm nav-cta">Book Now</a>
+        <a href="#contact" class="btn btn-orange btn-sm nav-cta">Free Consultation</a>
       </nav>
 
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
@@ -49,189 +63,214 @@
   <section class="hero" id="hero">
     <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <h1 class="hero-title">Time for your<br /><span>next adventure</span></h1>
-      <p class="hero-sub">Let us plan it for you</p>
-      <a href="#promos" class="btn btn-orange btn-lg">Book Now</a>
+      <p class="hero-eyebrow">Welcome to Adamens Travel</p>
+      <h1 class="hero-title">Excellence in Traveling &amp;<br /><span>Recruitment Services</span></h1>
+      <p class="hero-sub">We make international travel and education dreams a reality. With years of experience and a team of experts, we provide personalized support and guidance to help you achieve your goals.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-orange btn-lg">Schedule a Free Consultation</a>
+        <a href="#services" class="btn btn-ghost btn-lg">Explore Our Services</a>
+      </div>
     </div>
   </section>
 
-  <!-- ===================== ABOUT / TRAVEL MADE EASY ===================== -->
+  <!-- ===================== EXPLORE / STUDY & WORK ===================== -->
+  <section class="explore" id="explore">
+    <div class="container">
+      <div class="explore-head">
+        <h2>Study, work, or travel abroad —<br />we have got you covered</h2>
+        <p>Wherever your ambitions take you, our experts guide you every step of the way across the globe.</p>
+      </div>
+
+      <div class="destinations" aria-label="Destinations we cover">
+        <span class="dest-chip">Africa</span>
+        <span class="dest-chip">Asia</span>
+        <span class="dest-chip">Australia</span>
+        <span class="dest-chip">Canada</span>
+        <span class="dest-chip">USA</span>
+        <span class="dest-chip">Europe</span>
+        <span class="dest-chip">Middle East</span>
+      </div>
+
+      <div class="explore-cards">
+        <article class="explore-card">
+          <h3>Explore New Horizons</h3>
+          <p>Discover opportunities across Africa, Asia, Australia, Canada, USA, Europe and the Middle East — and let us help you get there.</p>
+          <a href="#services" class="link-arrow">Check Our Services →</a>
+        </article>
+        <article class="explore-card">
+          <h3>Study &amp; Work Abroad</h3>
+          <p>From study permits to recruitment and working visas, we open doors to education and careers around the world.</p>
+          <a href="#solutions" class="link-arrow">Our Solutions →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT / OUR STORY ===================== -->
   <section class="about" id="about">
     <div class="container about-inner">
-      <div class="about-text">
-        <span class="pin-badge" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
-          </svg>
-        </span>
-        <h2>Travel made easy</h2>
-        <p>
-          Adamens Travel &amp; Tour takes the stress out of getting away. From the first
-          idea to the journey home, our team handles the planning, the bookings, and the
-          little details — so all you have to do is show up and enjoy. We build trips
-          around the way you like to travel, and we're with you every step of the way.
-        </p>
-        <div class="about-buttons">
-          <a href="#promos" class="btn btn-orange">Latest Promos</a>
-          <a href="#services" class="btn btn-orange">Our Offerings</a>
-        </div>
-      </div>
       <div class="about-media">
-        <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=80"
-             alt="Traveler balancing on a railing beside a red off-road vehicle on a mountain pass" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80"
+             alt="Adamens Travel consultants meeting with clients" loading="lazy" />
+        <div class="about-badge"><strong>2020</strong><span>Founded</span></div>
+      </div>
+      <div class="about-text">
+        <p class="eyebrow">The Story of Adamens</p>
+        <h2>Connecting people with the world</h2>
+        <p>At Adamens Travel, our journey began with a passion for connecting people with the world. Founded in 2020, our company has grown from a small startup to a reputable travel and educational consultancy firm.</p>
+        <p>Our story is one of dedication, expertise, and a commitment to excellence. We've helped countless individuals and families achieve their international goals — whether studying abroad, working overseas, or exploring new destinations. As we expanded globally, our team grew and our expertise evolved.</p>
+        <p>Today, we're proud to be a trusted partner for those navigating the complexities of international travel, education and recruitment. Our story is still being written — join us on this journey, and let's create unforgettable experiences together!</p>
+        <a href="#contact" class="btn btn-navy">Read More</a>
       </div>
     </div>
   </section>
 
-  <!-- ===================== SUMMER DEALS PROMO ===================== -->
-  <section class="promos" id="promos">
-    <div class="container">
-      <h2 class="band-title">Summer Deals Promo</h2>
-      <div class="deal-grid">
-
-        <article class="deal-card">
-          <div class="deal-photo" style="background-image:url('https://images.unsplash.com/photo-1537565266759-34bbc16b2966?auto=format&fit=crop&w=700&q=80')">
-            <div class="deal-photo-overlay">
-              <h3>Nature Escape</h3>
-              <p class="deal-price">Starts at $999</p>
-            </div>
-          </div>
-          <div class="deal-body">
-            <ul>
-              <li>Round trip airfare</li>
-              <li>4D/3N Twin share room</li>
-              <li>Half board meals</li>
-              <li>Guided nature tour</li>
-              <li>Welcome drink</li>
-            </ul>
-            <a href="#contact" class="btn btn-orange btn-block">Book Now</a>
-          </div>
-        </article>
-
-        <article class="deal-card">
-          <div class="deal-photo" style="background-image:url('https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?auto=format&fit=crop&w=700&q=80')">
-            <div class="deal-photo-overlay">
-              <h3>Romantic Getaway</h3>
-              <p class="deal-price">Starts at $1500</p>
-            </div>
-          </div>
-          <div class="deal-body">
-            <ul>
-              <li>Round trip airfare</li>
-              <li>4D/3N Twin share room</li>
-              <li>Full board meals</li>
-              <li>Spa &amp; massage session</li>
-              <li>Couples meditation</li>
-            </ul>
-            <a href="#contact" class="btn btn-orange btn-block">Book Now</a>
-          </div>
-        </article>
-
-        <article class="deal-card">
-          <div class="deal-photo" style="background-image:url('https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=700&q=80')">
-            <div class="deal-photo-overlay">
-              <h3>Family Vacation</h3>
-              <p class="deal-price">Starts at $3000</p>
-            </div>
-          </div>
-          <div class="deal-body">
-            <ul>
-              <li>Round trip airfare</li>
-              <li>4D/3N Family suite</li>
-              <li>Full board meals</li>
-              <li>Guided nature tour</li>
-              <li>Choice group activity</li>
-            </ul>
-            <a href="#contact" class="btn btn-orange btn-block">Book Now</a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== SERVICES ===================== -->
+  <!-- ===================== OUR SERVICES ===================== -->
   <section class="services" id="services">
     <div class="container">
-      <h2 class="section-title">We'll handle your trip for you</h2>
+      <p class="eyebrow center">Our Services</p>
+      <h2 class="section-title">How we help you go global</h2>
       <div class="service-grid">
 
-        <article class="service">
-          <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=320&q=80"
-               alt="Airplane taking off at sunset" loading="lazy" />
-          <div>
-            <h3>Flight Booking</h3>
-            <p>We find and book the right flights for your dates and budget, and take care of every itinerary detail.</p>
-          </div>
+        <article class="service-card">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M8.5 17h7"/>
+            </svg>
+          </span>
+          <h3>Visiting Visas</h3>
+          <p>We will help you navigate the application process for visiting visas to your destination.</p>
         </article>
 
-        <article class="service">
-          <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=320&q=80"
-               alt="Traveler leaning out of a red vehicle on a scenic road" loading="lazy" />
-          <div>
-            <h3>Tours &amp; Activities</h3>
-            <p>Guided tours and curated experiences at every destination, matched to the way you love to explore.</p>
-          </div>
+        <article class="service-card">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2.7 3 6 3s6-2 6-3v-5"/>
+            </svg>
+          </span>
+          <h3>Study Permit</h3>
+          <p>Our team will guide you through the process of securing a study permit to study abroad.</p>
         </article>
 
-        <article class="service">
-          <img src="https://images.unsplash.com/photo-1476304884326-cd2c88572c5f?auto=format&fit=crop&w=320&q=80"
-               alt="Travelers with luggage at an airport terminal" loading="lazy" />
-          <div>
-            <h3>Airport Transfers</h3>
-            <p>Reliable pick-ups and drop-offs so you move from terminal to hotel without a moment of hassle.</p>
-          </div>
+        <article class="service-card">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M2 13h20"/>
+            </svg>
+          </span>
+          <h3>Recruitment &amp; Working Permit</h3>
+          <p>We will assist you with working visa applications, including eligibility criteria and application procedures.</p>
         </article>
 
-        <article class="service">
-          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=320&q=80"
-               alt="Bright, tidy hotel bedroom" loading="lazy" />
-          <div>
-            <h3>Hotel Bookings</h3>
-            <p>Handpicked stays for every budget, booked and confirmed so your room is ready when you arrive.</p>
-          </div>
+      </div>
+
+      <!-- Solutions offering cards -->
+      <div class="offer-grid">
+        <article class="offer-card">
+          <span class="offer-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2"/><circle cx="12" cy="12" r="3.5"/>
+            </svg>
+          </span>
+          <h3>Schengen Visa</h3>
+          <p>Comprehensive Schengen visa support — application process, required documentation, and embassy appointments — for a smooth, efficient approval, whether for tourism, business, or family visits.</p>
         </article>
 
+        <article class="offer-card">
+          <span class="offer-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2a.5.5 0 0 0-.5.8l3.9 4.3-2.5 2.5-1.9-.5a.5.5 0 0 0-.5.8L5 18l1.4 2.2a.5.5 0 0 0 .8-.1l.5-1.9 2.5-2.5 4.3 3.9a.5.5 0 0 0 .8-.5z"/>
+            </svg>
+          </span>
+          <h3>Travel Arrangements</h3>
+          <p>We take care of all your travel arrangements, including flights, accommodations, and travel insurance — so you can focus on the journey.</p>
+        </article>
+
+        <article class="offer-card">
+          <span class="offer-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 5a2 2 0 0 1 2-2h8l4 4v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M8 8h4M8 12h8M8 16h8"/>
+            </svg>
+          </span>
+          <h3>Educational Consultancy</h3>
+          <p>Our experts provide guidance on educational institutions, programs, and application procedures to help you find the right fit.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OUR SOLUTIONS (Strategy/Execution/Advisory) ===================== -->
+  <section class="solutions" id="solutions">
+    <div class="solutions-overlay"></div>
+    <div class="container solutions-inner">
+      <p class="eyebrow center light">Our Solutions</p>
+      <h2 class="section-title light">A clear path to your new journey</h2>
+      <div class="solutions-grid">
+
+        <article class="solution-step">
+          <span class="step-num">01</span>
+          <h3>Strategy</h3>
+          <p>A client-centric approach: our experts identify your strengths, interests, goals, and finances, then work closely with you to select the best programs and institutions worldwide — ensuring successful admissions and job offers.</p>
+        </article>
+
+        <article class="solution-step">
+          <span class="step-num">02</span>
+          <h3>Execution</h3>
+          <p>We undertake all the necessary research and hard work on your behalf, providing every relevant document that aids a successful recruitment, school, and visa application — so you can focus on your other priorities.</p>
+        </article>
+
+        <article class="solution-step">
+          <span class="step-num">03</span>
+          <h3>Study Abroad Advisory</h3>
+          <p>Studying abroad can be life-changing. We help you choose the right school, navigate the application process, and settle in once you arrive — for a stress-free and rewarding experience.</p>
+        </article>
+
+      </div>
+      <div class="solutions-cta">
+        <a href="#contact" class="btn btn-orange btn-lg">Check Our Services</a>
       </div>
     </div>
   </section>
 
   <!-- ===================== TESTIMONIALS ===================== -->
   <section class="testimonials" id="testimonials">
-    <div class="testimonials-overlay"></div>
-    <div class="container testimonials-inner">
-      <h2 class="band-title">Our favorite travelers</h2>
+    <div class="container">
+      <p class="eyebrow center">It's all about a dialogue</p>
+      <h2 class="section-title">A few words from our clients</h2>
       <div class="testimonial-grid">
 
         <figure class="testimonial-card">
-          <blockquote>Adamens planned every detail perfectly. The recommendations were spot on and the whole trip felt effortless — I'd travel with them again in a heartbeat.</blockquote>
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>After several attempts to get a job in Germany, a friend recommended Adamens Travel and I have never regretted my decision. They got me a job through their recruitment programs. The best!!</blockquote>
           <figcaption>
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Portrait of Noah Schumacher" loading="lazy" />
+            <span class="avatar" aria-hidden="true">J</span>
             <div>
-              <span class="t-name">Noah Schumacher</span>
-              <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+              <span class="t-name">Jonathan</span>
+              <span class="t-loc">Germany</span>
             </div>
           </figcaption>
         </figure>
 
         <figure class="testimonial-card">
-          <blockquote>From flights to transfers, everything just worked. The team was responsive, thoughtful, and made our getaway completely stress-free.</blockquote>
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>Paid and trusted Adamens Travel to secure this for me, and they delivered. I owe you guys at Adamens!!! Thank yoooouuuuu lol</blockquote>
           <figcaption>
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Portrait of Julia Patel" loading="lazy" />
+            <span class="avatar" aria-hidden="true">A</span>
             <div>
-              <span class="t-name">Julia Patel</span>
-              <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+              <span class="t-name">Ama</span>
+              <span class="t-loc">Ontario, Canada</span>
             </div>
           </figcaption>
         </figure>
 
         <figure class="testimonial-card">
-          <blockquote>The best travel experience we've had. Great value, warm service, and a family vacation the kids still talk about. Highly recommend Adamens.</blockquote>
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>At some point I thought this wasn't going to be possible, but the assurance and guidance I got from Adamens Travel made me feel positive. Truly they delivered and I'm in Canada reading my Masters. Thank you Adamens!</blockquote>
           <figcaption>
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&q=80" alt="Portrait of Natalia Lowe" loading="lazy" />
+            <span class="avatar" aria-hidden="true">G</span>
             <div>
-              <span class="t-name">Natalia Lowe</span>
-              <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+              <span class="t-name">Gifty</span>
+              <span class="t-loc">Canada</span>
             </div>
           </figcaption>
         </figure>
@@ -240,55 +279,76 @@
     </div>
   </section>
 
+  <!-- ===================== CTA / NEWSLETTER ===================== -->
+  <section class="cta-band" id="newsletter">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>Ready to make your dream take flight?</h2>
+        <p>Subscribe to our weekly newsletter for travel tips, opportunities, and updates.</p>
+      </div>
+      <form class="newsletter-form" id="newsletter-form" novalidate>
+        <label class="sr-only" for="nl-email">Email</label>
+        <input type="email" id="nl-email" name="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn btn-orange">Subscribe</button>
+        <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
   <!-- ===================== FOOTER / CONTACT ===================== -->
   <footer class="site-footer" id="contact">
     <div class="container footer-inner">
-      <div class="footer-card" style="background-image:url('https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=800&q=80')">
-        <div class="footer-card-overlay"></div>
-        <div class="footer-card-content">
-          <div class="brand brand-light">
-            <span class="brand-pin" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
-              </svg>
-            </span>
-            <span class="brand-text">
-              <strong>Adamens</strong>
-              <small>Travel &amp; Tour</small>
-            </span>
-          </div>
-          <h2 class="footer-headline">Let's plan your next trip</h2>
+      <div class="footer-brand">
+        <div class="brand brand-light">
+          <svg class="brand-logo" aria-hidden="true"><use href="#logo"/></svg>
+          <span class="brand-text">
+            <strong>Adamens Travel</strong>
+            <small>EXCELLENCE</small>
+          </span>
+        </div>
+        <p>We make international travel and education dreams a reality — helping you study, work, and travel abroad with confidence.</p>
+        <div class="socials" aria-label="Social media">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13 22v-8h3l.5-3.5H13V8.2c0-1 .3-1.7 1.8-1.7H16.6V3.3C16.3 3.2 15.2 3.1 14 3.1 11.4 3.1 9.7 4.7 9.7 7.6v2.9H6.7V14h3v8z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21H22.3v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H10z"/></svg></a>
+          <a href="https://wa.me/233541022934" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm5.6 14.2c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.3-.9-2.8-1.2-4.5-4-4.7-4.2-.1-.2-1.1-1.4-1.1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2 1.2.9 2 1.2 2.3 1.3.2 0 .4.1.6-.1l.9-1c.2-.2.4-.2.6-.1l1.9.9c.3.1.5.2.6.3.1.2.1.9-.1 1.5z"/></svg></a>
         </div>
       </div>
 
-      <div class="footer-details">
-        <div class="footer-col">
-          <h3>Address</h3>
-          <p>123 Anywhere St.<br />Any City<br />ST 12345<br />Country</p>
-        </div>
-        <div class="footer-col">
-          <h3>Contact</h3>
-          <p>
-            Telephone: (123) 456-7890<br />
-            Mobile: (123) 456-7890<br />
-            <strong>hello@adamenstravel.com</strong>
-          </p>
-        </div>
-        <div class="footer-col">
-          <h3>Office Hours</h3>
-          <p>
-            Monday: 8am – 7pm<br />
-            Tuesday: 8am – 5pm<br />
-            Wednesday: 8am – 5pm<br />
-            Thursday: 8am – 7pm<br />
-            Friday: 8am – 5pm
-          </p>
-        </div>
+      <div class="footer-col">
+        <h3>Get in touch</h3>
+        <ul class="contact-list">
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <span>Dome Pillar 2 – Aunty Mary,<br />Accra, Ghana</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L7.6 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg>
+            <span><a href="tel:+233541022934">054 102 2934</a> / <a href="tel:+233278162668">027 816 2668</a></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <span><a href="mailto:info@adamenstravel.com">info@adamenstravel.com</a></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#solutions">Our Solutions</a></li>
+          <li><a href="#testimonials">Client Stories</a></li>
+          <li><a href="#contact" class="btn btn-orange btn-sm">Free Consultation</a></li>
+        </ul>
       </div>
     </div>
+
     <div class="footer-bottom">
       <div class="container">
-        <p>&copy; <span id="year"></span> Adamens Travel &amp; Tour. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Adamens Travel. All rights reserved.</p>
+        <p class="tagline">Excellence in Traveling &amp; Recruitment Services</p>
       </div>
     </div>
   </footer>
