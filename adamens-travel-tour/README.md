@@ -7,25 +7,31 @@ brand's navy &amp; orange colours.
 ## Files
 | File | Purpose |
 | --- | --- |
-| `index.html` | Page markup — all sections + inline SVG logo/icons |
-| `styles.css` | Colours, layout, and responsive rules |
-| `script.js` | Mobile nav, newsletter form, footer year |
+| `index.html` | Home page |
+| `about.html` | About — story, mission &amp; vision, why choose us, stats |
+| `services.html` | Services — visas, permits, travel &amp; consultancy |
+| `solutions.html` | Solutions — Strategy / Execution / Advisory + process timeline |
+| `contact.html` | Contact form, details, and FAQ |
+| `styles.css` | Colours, layout, and responsive rules (shared) |
+| `script.js` | Mobile nav, forms, FAQ accordion, footer year (shared) |
 
 ## View it
-Open `index.html` in any web browser — no build step or server required.
+Open `index.html` in any web browser — no build step or server required. The pages link to
+each other, so navigation works straight from the file system.
 (A few photos load from [Unsplash](https://unsplash.com) over the internet; icons and the
 logo are inline SVG and always render offline.)
 
-## Sections
-1. Sticky header / navigation
-2. Hero — *Excellence in Traveling &amp; Recruitment Services*
-3. Explore — destinations (Africa, Asia, Australia, Canada, USA, Europe, Middle East) + study/work
-4. About — The Story of Adamens (founded 2020)
-5. Our Services — Visiting Visas, Study Permit, Recruitment &amp; Working Permit; plus Schengen Visa, Travel Arrangements, Educational Consultancy
-6. Our Solutions — Strategy, Execution, Study Abroad Advisory
-7. Testimonials — client stories (Jonathan, Ama, Gifty)
-8. Newsletter / call-to-action band
-9. Footer — contact details, links, socials
+## Pages &amp; sections
+- **Home** — hero, destinations/explore, about teaser, services, solutions, testimonials, newsletter
+- **About** — the story of Adamens (founded 2020), stats band, mission &amp; vision, why clients choose us
+- **Services** — Visiting Visas, Study Permit, Recruitment &amp; Working Permit, Schengen Visa, Travel Arrangements, Educational Consultancy
+- **Solutions** — Strategy, Execution, Study Abroad Advisory, and a step-by-step journey timeline
+- **Contact** — consultation form, contact details, WhatsApp link, and an FAQ accordion
+- Every page shares the same sticky header, footer, and contact details
+
+> **Note on the shared header/footer:** because this is a plain static site (no build step or
+> templating), the header and footer markup is duplicated in each page. If you edit navigation
+> links, the logo, or footer details, apply the change to every `*.html` file.
 
 ## Business details in the site
 - **Address:** Dome Pillar 2 – Aunty Mary, Accra, Ghana

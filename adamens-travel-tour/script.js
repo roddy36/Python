@@ -37,6 +37,38 @@
     });
   }
 
+  // Contact form (front-end only — no backend)
+  var cForm = document.getElementById("contact-form");
+  var cMsg = document.getElementById("contact-msg");
+  if (cForm && cMsg) {
+    cForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var name = (document.getElementById("c-name").value || "").trim();
+      var email = (document.getElementById("c-email").value || "").trim();
+      var message = (document.getElementById("c-message").value || "").trim();
+      var validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      if (!name || !validEmail || !message) {
+        cMsg.textContent = "Please fill in your name, a valid email, and a message.";
+        return;
+      }
+      cMsg.textContent = "Thank you, " + name + "! Your message has been received — we'll be in touch soon. ✈";
+      cForm.reset();
+    });
+  }
+
+  // FAQ accordion
+  var faq = document.getElementById("faq");
+  if (faq) {
+    faq.addEventListener("click", function (e) {
+      var btn = e.target.closest(".faq-q");
+      if (!btn) return;
+      var expanded = btn.getAttribute("aria-expanded") === "true";
+      var answer = btn.nextElementSibling;
+      btn.setAttribute("aria-expanded", expanded ? "false" : "true");
+      answer.style.maxHeight = expanded ? null : answer.scrollHeight + "px";
+    });
+  }
+
   // Current year in footer
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
