@@ -1,4 +1,4 @@
-// Adamens Travel — small interactions
+// Adamens Travel — interactions
 (function () {
   "use strict";
 
@@ -18,7 +18,56 @@
     });
   }
 
-  // Newsletter form (front-end only — no backend)
+  // Hero carousel
+  var slidesWrap = document.getElementById("hero-slides");
+  if (slidesWrap) {
+    var slides = Array.prototype.slice.call(slidesWrap.querySelectorAll(".hero-slide"));
+    var dotsWrap = document.getElementById("hero-dots");
+    var idx = 0, timer = null;
+    function go(n) {
+      slides[idx].classList.remove("is-active");
+      if (dots[idx]) dots[idx].classList.remove("is-active");
+      idx = (n + slides.length) % slides.length;
+      slides[idx].classList.add("is-active");
+      if (dots[idx]) dots[idx].classList.add("is-active");
+    }
+    var dots = slides.map(function (_, i) {
+      var b = document.createElement("button");
+      if (i === 0) b.classList.add("is-active");
+      b.setAttribute("aria-label", "Go to slide " + (i + 1));
+      b.addEventListener("click", function () { go(i); reset(); });
+      if (dotsWrap) dotsWrap.appendChild(b);
+      return b;
+    });
+    function next() { go(idx + 1); }
+    function prev() { go(idx - 1); }
+    function reset() { if (timer) clearInterval(timer); timer = setInterval(next, 6000); }
+    var nextBtn = document.getElementById("hero-next");
+    var prevBtn = document.getElementById("hero-prev");
+    if (nextBtn) nextBtn.addEventListener("click", function () { next(); reset(); });
+    if (prevBtn) prevBtn.addEventListener("click", function () { prev(); reset(); });
+    if (slides.length > 1) reset();
+  }
+
+  // Destination filters
+  var filters = document.getElementById("dest-filters");
+  var grid = document.getElementById("dest-grid");
+  if (filters && grid) {
+    var cards = Array.prototype.slice.call(grid.querySelectorAll(".dest-card"));
+    filters.addEventListener("click", function (e) {
+      var btn = e.target.closest(".chip");
+      if (!btn) return;
+      filters.querySelectorAll(".chip").forEach(function (c) { c.classList.remove("is-active"); });
+      btn.classList.add("is-active");
+      var f = btn.getAttribute("data-filter");
+      cards.forEach(function (card) {
+        var show = f === "all" || card.getAttribute("data-region") === f;
+        card.style.display = show ? "" : "none";
+      });
+    });
+  }
+
+  // Newsletter form (front-end only)
   var form = document.getElementById("newsletter-form");
   var msg = document.getElementById("form-msg");
   if (form && msg) {
@@ -27,17 +76,13 @@
       var input = document.getElementById("nl-email");
       var value = (input.value || "").trim();
       var valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
-      if (!valid) {
-        msg.textContent = "Please enter a valid email address.";
-        input.focus();
-        return;
-      }
+      if (!valid) { msg.textContent = "Please enter a valid email address."; input.focus(); return; }
       msg.textContent = "Thanks for subscribing! We'll be in touch. ✈";
       form.reset();
     });
   }
 
-  // Contact form (front-end only — no backend)
+  // Contact form (front-end only)
   var cForm = document.getElementById("contact-form");
   var cMsg = document.getElementById("contact-msg");
   if (cForm && cMsg) {
@@ -69,7 +114,7 @@
     });
   }
 
-  // Current year in footer
+  // Current year
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 })();
