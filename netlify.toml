@@ -1,0 +1,5 @@
+# Netlify configuration for the Adamens Travel website
+# Publishes the static site that lives in the adamens-travel-tour/ subfolder.
+[build]
+  publish = "adamens-travel-tour"
+  command = ""
