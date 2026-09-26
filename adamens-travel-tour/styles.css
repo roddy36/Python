@@ -165,7 +165,7 @@ ul { margin: 0; }
 .why-card p { color: var(--muted); margin: 0; font-size: 0.96rem; }
 
 /* ---------- Tour / service cards ---------- */
-.tour-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 46px; }
+.tour-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; margin-top: 46px; }
 .tour-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: transform .18s ease, border-color .18s ease; }
 .tour-card:hover { transform: translateY(-5px); border-color: var(--gold); }
 .tour-media { position: relative; aspect-ratio: 16 / 10; background-size: cover; background-position: center; background-color: #22271e; }
@@ -381,6 +381,7 @@ ul { margin: 0; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
   .dest-grid { grid-template-columns: repeat(2, 1fr); }
+  .tour-grid { grid-template-columns: repeat(2, 1fr); max-width: 720px; margin-inline: auto; }
 }
 @media (max-width: 900px) {
   .why-grid, .tour-grid, .review-grid, .service-grid, .offer-grid, .offer-grid.two, .solutions-grid, .whyus .why-grid { grid-template-columns: 1fr; max-width: 480px; margin-inline: auto; }
