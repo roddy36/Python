@@ -30,6 +30,13 @@
       idx = (n + slides.length) % slides.length;
       slides[idx].classList.add("is-active");
       if (dots[idx]) dots[idx].classList.add("is-active");
+      // play the active slide's video (if any), pause others
+      slides.forEach(function (s, i) {
+        var v = s.querySelector("video");
+        if (!v) return;
+        if (i === idx) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+        else { v.pause(); }
+      });
     }
     var dots = slides.map(function (_, i) {
       var b = document.createElement("button");
