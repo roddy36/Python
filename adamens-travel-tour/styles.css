@@ -131,7 +131,6 @@ ul { margin: 0; }
 .hero-slides { position: absolute; inset: 0; }
 .hero-slide { position: absolute; inset: 0; background-size: cover; background-position: center; display: flex; align-items: center; opacity: 0; transition: opacity .9s ease; }
 .hero-slide.is-active { opacity: 1; }
-.hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
 .hero-tint { position: absolute; inset: 0; background:
   linear-gradient(90deg, rgba(0,0,0,0.96) 0%, rgba(0,0,0,0.78) 42%, rgba(0,0,0,0.4) 100%),
   linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0.6) 100%); }
@@ -341,11 +340,6 @@ ul { margin: 0; }
 .contact-info a:hover { color: var(--gold); }
 .wa-btn { margin-top: 6px; color: #fff; }
 .wa-btn:hover { color: #14180f; }
-
-/* Video / Vlog */
-.vlog { background: var(--bg-2); padding: clamp(56px, 8vw, 96px) 0; }
-.vlog-frame { margin-top: 40px; border: 1px solid var(--line-strong); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: #000; line-height: 0; max-width: 960px; margin-inline: auto; }
-.vlog-frame video { width: 100%; height: auto; display: block; aspect-ratio: 16 / 9; object-fit: cover; background: #000; }
 
 /* Map */
 .map-section { background: var(--bg); padding: 0 0 clamp(56px, 8vw, 96px); }
